@@ -142,5 +142,10 @@ app.use((err, req, res, next) => {
 // -- Server -------------------------------------------------------------------
 const serverless = require('serverless-http');
 module.exports.handler = serverless(app, {
-    binary: ['application/wasm', 'application/octet-stream', 'application/pdf']
+    binary: [
+        'application/wasm',
+        'application/octet-stream',
+        'application/pdf',
+        'image/*'
+    ]
 });
