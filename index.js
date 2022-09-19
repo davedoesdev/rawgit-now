@@ -27,7 +27,7 @@ if (process.env.RAWGIT_ENABLE_NEW_RELIC) {
 }
 
 const express = require('express');
-const hbs     = require('express-handlebars');
+const hbs     = require('express-handlebars').engine;
 const path    = require('path');
 
 const config     = require('./conf');
